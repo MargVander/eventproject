@@ -86,3 +86,919 @@ Migrating to CreateAttendances (20190211100712)
   [1m[35m (41.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
   [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "carina@schadenzboncak.com"], ["description", "Ab dolor consectetur voluptas."], ["first_name", "Annie"], ["last_name", "Yundt"], ["created_at", "2019-02-11 14:51:11.801227"], ["updated_at", "2019-02-11 14:51:11.801227"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "meliafahey@schumm.com"], ["description", "Aut consectetur sit illum."], ["first_name", "France"], ["last_name", "Crooks"], ["created_at", "2019-02-11 14:51:11.805760"], ["updated_at", "2019-02-11 14:51:11.805760"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "athena@gottlieb.co"], ["description", "Illo quam porro et."], ["first_name", "Collene"], ["last_name", "Rowe"], ["created_at", "2019-02-11 14:51:11.808478"], ["updated_at", "2019-02-11 14:51:11.808478"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "heath@goyette.name"], ["description", "Facilis voluptatem et in."], ["first_name", "Nora"], ["last_name", "Langosh"], ["created_at", "2019-02-11 14:51:11.811255"], ["updated_at", "2019-02-11 14:51:11.811255"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "elenora@mcdermott.name"], ["description", "Assumenda et non in."], ["first_name", "Hung"], ["last_name", "Hahn"], ["created_at", "2019-02-11 14:51:11.814001"], ["updated_at", "2019-02-11 14:51:11.814001"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "lanespinka@ritchieziemann.io"], ["description", "Deserunt quis totam enim."], ["first_name", "Minh"], ["last_name", "Lemke"], ["created_at", "2019-02-11 14:51:11.817301"], ["updated_at", "2019-02-11 14:51:11.817301"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "colton@bruen.com"], ["description", "Ducimus dolorum ab sit."], ["first_name", "Terence"], ["last_name", "Bergstrom"], ["created_at", "2019-02-11 14:51:11.821495"], ["updated_at", "2019-02-11 14:51:11.821495"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "michaela@bahringerpacocha.info"], ["description", "Ex est et debitis."], ["first_name", "Abram"], ["last_name", "Hermiston"], ["created_at", "2019-02-11 14:51:11.824643"], ["updated_at", "2019-02-11 14:51:11.824643"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "lorieshields@collierjast.name"], ["description", "Maiores sint sequi aut."], ["first_name", "Titus"], ["last_name", "McLaughlin"], ["created_at", "2019-02-11 14:51:11.827496"], ["updated_at", "2019-02-11 14:51:11.827496"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "jewelhuel@ratkeschaefer.name"], ["description", "Qui harum tenetur enim."], ["first_name", "Cynthia"], ["last_name", "Casper"], ["created_at", "2019-02-11 14:51:11.830344"], ["updated_at", "2019-02-11 14:51:11.830344"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Create (44.0ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 8], ["start_date", "2019-02-16 14:51:11.837467"], ["duration", 5], ["title", "Detox"], ["description", "Eos amet aperiam omnis."], ["price", 5], ["location", "Cortezborough"], ["created_at", "2019-02-11 14:51:11.855250"], ["updated_at", "2019-02-11 14:51:11.855250"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 6], ["start_date", "2019-02-16 14:51:11.901548"], ["duration", 5], ["title", "Kenya Michaels"], ["description", "Ipsam quidem qui porro."], ["price", 5], ["location", "Nicolasmouth"], ["created_at", "2019-02-11 14:51:11.904865"], ["updated_at", "2019-02-11 14:51:11.904865"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 9], ["start_date", "2019-02-16 14:51:11.911284"], ["duration", 5], ["title", "Alaska"], ["description", "Quia nemo illo impedit."], ["price", 5], ["location", "South Josephfort"], ["created_at", "2019-02-11 14:51:11.913758"], ["updated_at", "2019-02-11 14:51:11.913758"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 3], ["start_date", "2019-02-16 14:51:11.915215"], ["duration", 5], ["title", "Farrah Moan"], ["description", "Voluptatem est distinctio veritatis."], ["price", 5], ["location", "Alexisside"], ["created_at", "2019-02-11 14:51:11.918791"], ["updated_at", "2019-02-11 14:51:11.918791"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (43.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 5], ["event_id", 2], ["created_at", "2019-02-11 14:51:11.942262"], ["updated_at", "2019-02-11 14:51:11.942262"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 2], ["event_id", 4], ["created_at", "2019-02-11 14:51:11.989718"], ["updated_at", "2019-02-11 14:51:11.989718"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 2], ["event_id", 1], ["created_at", "2019-02-11 14:51:11.993691"], ["updated_at", "2019-02-11 14:51:11.993691"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 9], ["event_id", 1], ["created_at", "2019-02-11 14:51:11.997836"], ["updated_at", "2019-02-11 14:51:11.997836"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 1], ["event_id", 3], ["created_at", "2019-02-11 14:51:12.002805"], ["updated_at", "2019-02-11 14:51:12.002805"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 4], ["event_id", 2], ["created_at", "2019-02-11 14:51:12.007182"], ["updated_at", "2019-02-11 14:51:12.007182"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 1], ["event_id", 4], ["created_at", "2019-02-11 14:51:12.011234"], ["updated_at", "2019-02-11 14:51:12.011234"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 8], ["event_id", 4], ["created_at", "2019-02-11 14:51:12.015383"], ["updated_at", "2019-02-11 14:51:12.015383"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 8], ["event_id", 1], ["created_at", "2019-02-11 14:51:12.020368"], ["updated_at", "2019-02-11 14:51:12.020368"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 8], ["event_id", 3], ["created_at", "2019-02-11 14:51:12.024215"], ["updated_at", "2019-02-11 14:51:12.024215"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "attendances" ON "users"."id" = "attendances"."attendee_id" WHERE "attendances"."event_id" = $1 LIMIT $2[0m  [["event_id", 3], ["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:01:31.819294"], ["updated_at", "2019-02-11 15:01:31.819294"]]
+  [1m[35m (41.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:02:37.263340"], ["updated_at", "2019-02-11 15:02:37.263340"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:02:46.284002"], ["updated_at", "2019-02-11 15:02:46.284002"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (16.7ms)
+UserMailer#welcome_email: processed outbound mail in 67.3ms
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:03:55.301495"], ["updated_at", "2019-02-11 15:03:55.301495"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.3ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 654.0ms
+Sent mail to boudino@yopmail.com (74.9ms)
+Date: Mon, 11 Feb 2019 16:03:56 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c618edc109ce_2db13fc687034e6c744ac@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c618edcd1f4_2db13fc687034e6c74352";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c618edcd1f4_2db13fc687034e6c74352
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib3VkaW5vQHlv
+cG1haWwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c618edcd1f4_2db13fc687034e6c74352
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ boudino@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c618edcd1f4_2db13fc687034e6c74352--
+
+  [1m[35m (24.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mAttendance Load (0.5ms)[0m  [1m[34mSELECT  "attendances".* FROM "attendances" WHERE "attendances"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 11], ["start_date", "2019-02-14 15:21:22.861504"], ["duration", 5], ["title", "Blablabla"], ["description", "Blablablablablablablablabla"], ["price", 5], ["location", "Lille"], ["created_at", "2019-02-11 15:22:32.075756"], ["updated_at", "2019-02-11 15:22:32.075756"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 1], ["event_id", 5], ["created_at", "2019-02-11 15:24:19.953282"], ["updated_at", "2019-02-11 15:24:19.953282"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (1.0ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.7ms)
+UserMailer#new_attendee_email: processed outbound mail in 85.5ms
+Sent mail to boudino@yopmail.com (64.6ms)
+Date: Mon, 11 Feb 2019 16:24:20 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c6193a429b37_2f1b3fc687034e6c789c5@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c6193a427531_2f1b3fc687034e6c788bb";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c6193a427531_2f1b3fc687034e6c788bb
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c6193a427531_2f1b3fc687034e6c788bb
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux !</h1>=0D
+    <p>=0D
+      L'utilisateur Annie vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8ne=
+ment Blablabla.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c6193a427531_2f1b3fc687034e6c788bb--
+
+  [1m[35m (42.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:36:24.208833"], ["updated_at", "2019-02-11 15:36:24.208833"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 80.6ms
+Sent mail to boudino@yopmail.com (288.0ms)
+Date: Mon, 11 Feb 2019 16:36:24 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c6196784cfdc_30c83fc7a2442e5c475e6@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c6196784a01a_30c83fc7a2442e5c474be";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c6196784a01a_30c83fc7a2442e5c474be
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib3VkaW5vQHlv
+cG1haWwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c6196784a01a_30c83fc7a2442e5c474be
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ boudino@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c6196784a01a_30c83fc7a2442e5c474be--
+
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:42:35.547082"], ["updated_at", "2019-02-11 15:42:35.547082"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 73.3ms
+Sent mail to boudino@yopmail.com (503.6ms)
+Date: Mon, 11 Feb 2019 16:42:35 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c6197eb9d8d1_31953ffd3ac42e54858c0@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c6197eb9bd96_31953ffd3ac42e54857cc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c6197eb9bd96_31953ffd3ac42e54857cc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib3VkaW5vQHlv
+cG1haWwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c6197eb9bd96_31953ffd3ac42e54857cc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ boudino@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c6197eb9bd96_31953ffd3ac42e54857cc--
+
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "missmarg@hotmail.fr"], ["description", "Blablabla"], ["first_name", "Mgx"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:50:05.705960"], ["updated_at", "2019-02-11 15:50:05.705960"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 54.3ms
+Sent mail to missmarg@hotmail.fr (1222.1ms)
+Date: Mon, 11 Feb 2019 16:50:05 +0100
+From: no-reply@eventproject.fr
+To: missmarg@hotmail.fr
+Message-ID: <5c6199adbeccc_31eb3ffd3ac42e5485843@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c6199adbd1b7_31eb3ffd3ac42e54857d7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c6199adbd1b7_31eb3ffd3ac42e54857d7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWd4IGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG1pc3NtYXJnQGhvdG1h
+aWwuZnIuDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xv
+Z2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0K
+DQo=
+
+----==_mimepart_5c6199adbd1b7_31eb3ffd3ac42e54857d7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Mgx et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ missmarg@hotmail.fr.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c6199adbd1b7_31eb3ffd3ac42e54857d7--
+
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 15:52:25.676989"], ["updated_at", "2019-02-11 15:52:25.676989"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 35.3ms
+Sent mail to boudino@yopmail.com (543.0ms)
+Date: Mon, 11 Feb 2019 16:52:25 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c619a39aed52_31eb3ffd3ac42e5486073@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c619a39ae036_31eb3ffd3ac42e548592d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c619a39ae036_31eb3ffd3ac42e548592d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib3VkaW5vQHlv
+cG1haWwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c619a39ae036_31eb3ffd3ac42e548592d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ boudino@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c619a39ae036_31eb3ffd3ac42e548592d--
+
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 11], ["start_date", "2019-02-14 15:54:04.074727"], ["duration", 5], ["title", "Blablabla"], ["description", "Blablablablablablablablabla"], ["price", 5], ["location", "Lille"], ["created_at", "2019-02-11 15:55:26.175086"], ["updated_at", "2019-02-11 15:55:26.175086"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 1], ["event_id", 6], ["created_at", "2019-02-11 15:57:04.802143"], ["updated_at", "2019-02-11 15:57:04.802143"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#new_attendee_email: processed outbound mail in 52.7ms
+Sent mail to boudino@yopmail.com (493.0ms)
+Date: Mon, 11 Feb 2019 16:57:04 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c619b50d19a9_31eb3ffd3ac42e54862a3@MacBook-Pro-de-Margaux.local.mail>
+Subject: Nouvel inscrit
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c619b50d0bb1_31eb3ffd3ac42e5486178";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c619b50d0bb1_31eb3ffd3ac42e5486178
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KTCd1dGlsaXNhdGV1ciBBbm5pZSB2aWVudCBkZSBzZSBy
+YWpvdXRlciDDoCB0b24gw6l2w6huZW1lbnQgQmxhYmxhYmxhLg0KDQpQb3Vy
+IGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kg
+dmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5mci9sb2dpbi4NCg0Kw4AgdHLD
+qHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZyICENCg0K
+
+----==_mimepart_5c619b50d0bb1_31eb3ffd3ac42e5486178
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux !</h1>=0D
+    <p>=0D
+      L'utilisateur Annie vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8ne=
+ment Blablabla.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c619b50d0bb1_31eb3ffd3ac42e5486178--
+
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (41.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (188.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "event_project_test"[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (502.2ms)[0m  [1m[35mCREATE DATABASE "event_project_test" ENCODING = 'unicode'[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "attendances" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "attendances" ("id" bigserial primary key, "attendee_id" bigint, "event_id" bigint, "stripe_customer_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_attendee_id" ON "attendances"  ("attendee_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_event_id" ON "attendances"  ("event_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "events" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "admin_id" bigint, "start_date" timestamp, "duration" integer, "title" character varying, "description" text, "price" integer, "location" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_events_on_admin_id" ON "events"  ("admin_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:41
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "description" text, "first_name" character varying, "last_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:41
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190211100712)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190211094413),
+(20190211094726);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-11 16:44:01.250195"], ["updated_at", "2019-02-11 16:44:01.250195"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Update (42.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-02-11 16:44:01.255976"], ["key", "environment"]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "boudino@yopmail.com"], ["description", "Blablabla"], ["first_name", "Margaux"], ["last_name", "Vdbk"], ["created_at", "2019-02-11 17:13:07.435814"], ["updated_at", "2019-02-11 17:13:07.435814"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.9ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 60.3ms
+Sent mail to boudino@yopmail.com (549.4ms)
+Date: Mon, 11 Feb 2019 18:13:07 +0100
+From: no-reply@eventproject.fr
+To: boudino@yopmail.com
+Message-ID: <5c61ad237e027_3a2a3fc497042e3c77089@MacBook-Pro-de-Margaux.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61ad237c0ef_3a2a3fc497042e3c7695";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61ad237c0ef_3a2a3fc497042e3c7695
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyZ2F1eCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib3VkaW5vQHlv
+cG1haWwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61ad237c0ef_3a2a3fc497042e3c7695
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Margaux et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ boudino@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61ad237c0ef_3a2a3fc497042e3c7695--
+
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m

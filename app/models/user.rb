@@ -9,9 +9,9 @@ class User < ApplicationRecord
     format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, message: "email adress please" }
 
 
-  # def welcome_send
-  #   UserMailer.welcome_email(self).deliver_now
-  # end
+  def welcome_send
+    UserMailer.welcome_email(self).deliver_now
+  end
 
 
 end
