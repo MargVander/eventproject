@@ -61,13 +61,3 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = false
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
-
-ActionMailer::Base.smtp_settings = {
-  :user_name => ENV['SENDGRID_LOGIN'],
-  :password => ENV['SENDGRID_PWD'],
-  :domain => 'eventproject.fr',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
-  :authentication => :plain,
-  :enable_starttls_auto => true
-}
