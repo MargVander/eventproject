@@ -1,0 +1,15 @@
+<h1 class="font-weight-light" align="center"><%= @event.title %></h1><br>
+  <% event = @event %>
+  <div class="card" align="center">
+  <div class="card-body col-sm-10">
+    <blockquote class="blockquote mb-0 text-left">
+      <p><%= event.description %></p>
+      <p class="text-muted small">Le <%= event.start_date %> pendant <%= event.duration %> minutes <br>
+      A <%= event.location %> <br>
+      <%= event.attendees.count %> inscrit(s)</p>
+      <footer class="blockquote-footer"><a class="text-muted" href="<%=user_path(event.admin.id)%>"><%= event.admin.email %></a></footer>
+
+    </blockquote>
+  </div>
+  </div>
+  <p class="font-weight-light text-muted"><small>Created at : <%= event.created_at %></small></p>

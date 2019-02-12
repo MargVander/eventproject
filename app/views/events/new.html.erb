@@ -1,0 +1,46 @@
+<h1 class="font-weight-light" align="center">New event</h1><br>
+
+
+
+
+<div class="container col-md-8 order-md-1">
+  <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+
+
+     <div class="form-group">
+           <%= label_tag 'Date' %>
+           <%= text_field_tag 'start_date', @start_date, class: "form-control "  %>
+     </div>
+
+     <div class="form-group">
+           <%= label_tag 'Duration' %>
+           <%= text_field_tag 'duration', @duration, class: "form-control "  %>
+     </div>
+
+     <div class="form-group">
+           <%= label_tag 'Title' %>
+           <%= text_field_tag 'title', @title, class: "form-control "  %>
+     </div>
+
+     <div class="form">
+           <%= label_tag 'Description' %>
+           <%= text_area_tag 'description', @description, class: "form-control" %>
+     </div><br>
+
+     <div class="form-group">
+           <%= label_tag 'Price' %>
+           <%= text_field_tag 'price', @price, class: "form-control "  %>
+     </div>
+
+     <div class="form-group">
+           <%= label_tag 'Location' %>
+           <%= text_field_tag 'location', @location, class: "form-control "  %>
+     </div>
+
+     <div class="form-group">
+           <%= submit_tag "Create gossip", class: 'btn btn-secondary btn-lg btn-submit' %>
+     </div>
+
+     <% end %>
+     </div>

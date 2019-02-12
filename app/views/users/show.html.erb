@@ -1,0 +1,14 @@
+<% user = @user %>
+<h1 class="font-weight-light" align="center"><%= user.first_name %> <%= user.last_name %></h1><br>
+
+
+
+
+<div class="card" align="center">
+<div class="card-body col-sm-10">
+  <blockquote class="blockquote mb-0 text-left">
+    <p class="text-muted"><%= user.email %><br>
+    <p class="font-italic font-weight-light">"<%= user.description %>"</p>
+  </blockquote>
+</div>
+</div>

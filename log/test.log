@@ -33464,3 +33464,3480 @@ pe' />=0D
 
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (41.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "stacy@mclaughlin.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Davida"], ["last_name", "Streich"], ["created_at", "2019-02-11 20:54:48.939078"], ["updated_at", "2019-02-11 20:54:48.939078"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 66.6ms
+Sent mail to stacy@mclaughlin.net (6.4ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: stacy@mclaughlin.net
+Message-ID: <5c61e119cd10_48ad3fd020840e4c67153@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e119bd44_48ad3fd020840e4c670a9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e119bd44_48ad3fd020840e4c670a9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRGF2aWRhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHN0YWN5QG1jbGF1
+Z2hsaW4ubmV0Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e119bd44_48ad3fd020840e4c670a9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Davida et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ stacy@mclaughlin.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e119bd44_48ad3fd020840e4c670a9--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 148], ["start_date", "2019-02-14 20:54:49.060327"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 223], ["location", "North Rosette"], ["created_at", "2019-02-11 20:54:49.062093"], ["updated_at", "2019-02-11 20:54:49.062093"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "gregg@rolfsonhoppe.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Calvin"], ["last_name", "Christiansen"], ["created_at", "2019-02-11 20:54:49.066305"], ["updated_at", "2019-02-11 20:54:49.066305"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to gregg@rolfsonhoppe.com (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: gregg@rolfsonhoppe.com
+Message-ID: <5c61e1191138f_48ad3fd020840e4c673d@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11910cd7_48ad3fd020840e4c6720";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11910cd7_48ad3fd020840e4c6720
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ2FsdmluIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGdyZWdnQHJvbGZz
+b25ob3BwZS5jb20uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0
+LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3Qu
+ZnIgIQ0KDQo=
+
+----==_mimepart_5c61e11910cd7_48ad3fd020840e4c6720
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Calvin et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ gregg@rolfsonhoppe.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11910cd7_48ad3fd020840e4c6720--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 149], ["event_id", 54], ["created_at", "2019-02-11 20:54:49.074026"], ["updated_at", "2019-02-11 20:54:49.074026"]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#new_attendee_email: processed outbound mail in 32.7ms
+Sent mail to stacy@mclaughlin.net (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: stacy@mclaughlin.net
+Message-ID: <5c61e1191aa16_48ad3fd020840e4c67548@MBP-de-Margaux.mail>
+Subject: Nouvel inscrit
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1191a365_48ad3fd020840e4c6741e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1191a365_48ad3fd020840e4c6741e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRGF2aWRhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpMJ3V0aWxpc2F0ZXVyIENhbHZpbiB2aWVudCBkZSBzZSBy
+YWpvdXRlciDDoCB0b24gw6l2w6huZW1lbnQgTG9yZW0gSXBzdW0uDQoNClBv
+dXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNvbm5lY3RlLXRv
+aSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xvZ2luLg0KDQrDgCB0
+csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e1191a365_48ad3fd020840e4c6741e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Davida !</h1>=0D
+    <p>=0D
+      L'utilisateur Calvin vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8n=
+ement Lorem Ipsum.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1191a365_48ad3fd020840e4c6741e--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "zachary@zboncak.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Reanna"], ["last_name", "Feil"], ["created_at", "2019-02-11 20:54:49.113073"], ["updated_at", "2019-02-11 20:54:49.113073"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 1.9ms
+Sent mail to zachary@zboncak.com (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: zachary@zboncak.com
+Message-ID: <5c61e1191c81c_48ad3fd020840e4c677d9@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1191c1bc_48ad3fd020840e4c6761b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1191c1bc_48ad3fd020840e4c6761b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUmVhbm5hIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHphY2hhcnlAemJv
+bmNhay5jb20uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZy
+L2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIg
+IQ0KDQo=
+
+----==_mimepart_5c61e1191c1bc_48ad3fd020840e4c6761b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Reanna et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ zachary@zboncak.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1191c1bc_48ad3fd020840e4c6761b--
+
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 150], ["start_date", "2019-02-14 20:54:49.119268"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 650], ["location", "Schoenstad"], ["created_at", "2019-02-11 20:54:49.120244"], ["updated_at", "2019-02-11 20:54:49.120244"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "rufina@mayer.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Berenice"], ["last_name", "Boyer"], ["created_at", "2019-02-11 20:54:49.122851"], ["updated_at", "2019-02-11 20:54:49.122851"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 1.9ms
+Sent mail to rufina@mayer.biz (2.5ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: rufina@mayer.biz
+Message-ID: <5c61e1191ee0f_48ad3fd020840e4c67911@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1191e7c5_48ad3fd020840e4c6785";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1191e7c5_48ad3fd020840e4c6785
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQmVyZW5pY2UgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogcnVmaW5hQG1h
+eWVyLmJpei4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIv
+bG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAh
+DQoNCg==
+
+----==_mimepart_5c61e1191e7c5_48ad3fd020840e4c6785
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Berenice et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ rufina@mayer.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1191e7c5_48ad3fd020840e4c6785--
+
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "vivan@harber.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Tressa"], ["last_name", "Roob"], ["created_at", "2019-02-11 20:54:49.132599"], ["updated_at", "2019-02-11 20:54:49.132599"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to vivan@harber.net (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: vivan@harber.net
+Message-ID: <5c61e119216bc_48ad3fd020840e4c681a1@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11920fc6_48ad3fd020840e4c6806f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11920fc6_48ad3fd020840e4c6806f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVHJlc3NhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHZpdmFuQGhhcmJl
+ci5uZXQuDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xv
+Z2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0K
+DQo=
+
+----==_mimepart_5c61e11920fc6_48ad3fd020840e4c6806f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tressa et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ vivan@harber.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11920fc6_48ad3fd020840e4c6806f--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 152], ["start_date", "2019-02-14 20:54:49.139387"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 712], ["location", "Bahringerbury"], ["created_at", "2019-02-11 20:54:49.140701"], ["updated_at", "2019-02-11 20:54:49.140701"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "ashley@hane.io"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Andrea"], ["last_name", "O'Connell"], ["created_at", "2019-02-11 20:54:49.143960"], ["updated_at", "2019-02-11 20:54:49.143960"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 3.1ms
+Sent mail to ashley@hane.io (2.8ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: ashley@hane.io
+Message-ID: <5c61e119247a6_48ad3fd020840e4c68382@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11923d68_48ad3fd020840e4c68234";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11923d68_48ad3fd020840e4c68234
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQW5kcmVhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGFzaGxleUBoYW5l
+LmlvLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBj
+b25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5mci9sb2dp
+bi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZyICENCg0K
+
+----==_mimepart_5c61e11923d68_48ad3fd020840e4c68234
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Andrea et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ ashley@hane.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11923d68_48ad3fd020840e4c68234--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 153], ["event_id", 56], ["created_at", "2019-02-11 20:54:49.152602"], ["updated_at", "2019-02-11 20:54:49.152602"]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#new_attendee_email: processed outbound mail in 3.0ms
+Sent mail to vivan@harber.net (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: vivan@harber.net
+Message-ID: <5c61e11926d33_48ad3fd020840e4c6854b@MBP-de-Margaux.mail>
+Subject: Nouvel inscrit
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e119265b8_48ad3fd020840e4c6846d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e119265b8_48ad3fd020840e4c6846d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVHJlc3NhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpMJ3V0aWxpc2F0ZXVyIEFuZHJlYSB2aWVudCBkZSBzZSBy
+YWpvdXRlciDDoCB0b24gw6l2w6huZW1lbnQgTG9yZW0gSXBzdW0uDQoNClBv
+dXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNvbm5lY3RlLXRv
+aSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xvZ2luLg0KDQrDgCB0
+csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e119265b8_48ad3fd020840e4c6846d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tressa !</h1>=0D
+    <p>=0D
+      L'utilisateur Andrea vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8n=
+ement Lorem Ipsum.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e119265b8_48ad3fd020840e4c6846d--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "danuta@turcotte.org"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Leonore"], ["last_name", "Kulas"], ["created_at", "2019-02-11 20:54:49.165595"], ["updated_at", "2019-02-11 20:54:49.165595"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to danuta@turcotte.org (4.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: danuta@turcotte.org
+Message-ID: <5c61e11929e47_48ad3fd020840e4c68742@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11929243_48ad3fd020840e4c68678";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11929243_48ad3fd020840e4c68678
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGVvbm9yZSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBkYW51dGFAdHVy
+Y290dGUub3JnLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e11929243_48ad3fd020840e4c68678
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Leonore et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ danuta@turcotte.org.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11929243_48ad3fd020840e4c68678--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 154], ["start_date", "2019-02-14 20:54:49.174904"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 473], ["location", "Masonside"], ["created_at", "2019-02-11 20:54:49.176184"], ["updated_at", "2019-02-11 20:54:49.176184"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "scott@hackett.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Jim"], ["last_name", "Walsh"], ["created_at", "2019-02-11 20:54:49.179026"], ["updated_at", "2019-02-11 20:54:49.179026"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to scott@hackett.com (2.6ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: scott@hackett.com
+Message-ID: <5c61e1192cb71_48ad3fd020840e4c689e0@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1192c470_48ad3fd020840e4c688ce";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1192c470_48ad3fd020840e4c688ce
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSmltIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHNjb3R0QGhhY2tldHQu
+Y29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBj
+b25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5mci9sb2dp
+bi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZyICENCg0K
+
+----==_mimepart_5c61e1192c470_48ad3fd020840e4c688ce
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Jim et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ scott@hackett.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1192c470_48ad3fd020840e4c688ce--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "tarrastark@stamm.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Forrest"], ["last_name", "Zulauf"], ["created_at", "2019-02-11 20:54:49.189500"], ["updated_at", "2019-02-11 20:54:49.189500"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to tarrastark@stamm.biz (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: tarrastark@stamm.biz
+Message-ID: <5c61e1192f5ca_48ad3fd020840e4c691b1@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1192ee6e_48ad3fd020840e4c6908c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1192ee6e_48ad3fd020840e4c6908c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRm9ycmVzdCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiB0YXJyYXN0YXJr
+QHN0YW1tLmJpei4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3Qu
+ZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5m
+ciAhDQoNCg==
+
+----==_mimepart_5c61e1192ee6e_48ad3fd020840e4c6908c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Forrest et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ tarrastark@stamm.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1192ee6e_48ad3fd020840e4c6908c--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 156], ["start_date", "2019-02-14 20:54:49.196440"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 807], ["location", "Otisburgh"], ["created_at", "2019-02-11 20:54:49.197950"], ["updated_at", "2019-02-11 20:54:49.197950"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "niesharodriguez@parisian.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Timothy"], ["last_name", "Kertzmann"], ["created_at", "2019-02-11 20:54:49.202668"], ["updated_at", "2019-02-11 20:54:49.202668"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 3.5ms
+Sent mail to niesharodriguez@parisian.biz (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: niesharodriguez@parisian.biz
+Message-ID: <5c61e11932d85_48ad3fd020840e4c69311@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11932692_48ad3fd020840e4c69234";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11932692_48ad3fd020840e4c69234
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVGltb3RoeSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBuaWVzaGFyb2Ry
+aWd1ZXpAcGFyaXNpYW4uYml6Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBl
+c3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50
+cHJvamVjdC5mci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRw
+cm9qZWN0LmZyICENCg0K
+
+----==_mimepart_5c61e11932692_48ad3fd020840e4c69234
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Timothy et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ niesharodriguez@parisian.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11932692_48ad3fd020840e4c69234--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 157], ["start_date", "2019-02-14 20:54:49.210727"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 420], ["location", "South Horacio"], ["created_at", "2019-02-11 20:54:49.211944"], ["updated_at", "2019-02-11 20:54:49.211944"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "emorykirlin@grant.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Mathew"], ["last_name", "Ferry"], ["created_at", "2019-02-11 20:54:49.218786"], ["updated_at", "2019-02-11 20:54:49.218786"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 3.2ms
+Sent mail to emorykirlin@grant.net (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: emorykirlin@grant.net
+Message-ID: <5c61e11936e06_48ad3fd020840e4c695bd@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1193669d_48ad3fd020840e4c69438";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1193669d_48ad3fd020840e4c69438
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWF0aGV3IGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGVtb3J5a2lybGlu
+QGdyYW50Lm5ldC4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3Qu
+ZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5m
+ciAhDQoNCg==
+
+----==_mimepart_5c61e1193669d_48ad3fd020840e4c69438
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Mathew et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ emorykirlin@grant.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1193669d_48ad3fd020840e4c69438--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 158], ["start_date", "2019-02-14 20:54:49.227280"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 295], ["location", "Maisieburgh"], ["created_at", "2019-02-11 20:54:49.228461"], ["updated_at", "2019-02-11 20:54:49.228461"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "alfredareichert@herzog.io"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Caren"], ["last_name", "Auer"], ["created_at", "2019-02-11 20:54:49.241730"], ["updated_at", "2019-02-11 20:54:49.241730"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to alfredareichert@herzog.io (2.9ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: alfredareichert@herzog.io
+Message-ID: <5c61e1193c160_48ad3fd020840e4c69772@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1193b9f4_48ad3fd020840e4c69642";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1193b9f4_48ad3fd020840e4c69642
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ2FyZW4gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogYWxmcmVkYXJlaWNo
+ZXJ0QGhlcnpvZy5pby4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNl
+IGNsaWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2pl
+Y3QuZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVj
+dC5mciAhDQoNCg==
+
+----==_mimepart_5c61e1193b9f4_48ad3fd020840e4c69642
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Caren et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ alfredareichert@herzog.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1193b9f4_48ad3fd020840e4c69642--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 159], ["start_date", "2019-02-14 20:54:49.248881"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 712], ["location", "North Jeni"], ["created_at", "2019-02-11 20:54:49.250415"], ["updated_at", "2019-02-11 20:54:49.250415"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "trinidaddach@stokesturcotte.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Trinidad"], ["last_name", "Wyman"], ["created_at", "2019-02-11 20:54:49.263625"], ["updated_at", "2019-02-11 20:54:49.263625"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.5ms
+Sent mail to trinidaddach@stokesturcotte.net (4.8ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: trinidaddach@stokesturcotte.net
+Message-ID: <5c61e11941aca_48ad3fd020840e4c699bb@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11941302_48ad3fd020840e4c69879";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11941302_48ad3fd020840e4c69879
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVHJpbmlkYWQgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogdHJpbmlkYWRk
+YWNoQHN0b2tlc3R1cmNvdHRlLm5ldC4NCg0KUG91ciBhY2PDqWRlciDDoCB0
+b24gZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9l
+dmVudHByb2plY3QuZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2
+ZW50cHJvamVjdC5mciAhDQoNCg==
+
+----==_mimepart_5c61e11941302_48ad3fd020840e4c69879
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Trinidad et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ trinidaddach@stokesturcotte.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11941302_48ad3fd020840e4c69879--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 160], ["start_date", "2019-02-14 20:54:49.273679"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 361], ["location", "Carterfurt"], ["created_at", "2019-02-11 20:54:49.275074"], ["updated_at", "2019-02-11 20:54:49.275074"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "marlyn@barrows.io"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Shaniqua"], ["last_name", "Dibbert"], ["created_at", "2019-02-11 20:54:49.283170"], ["updated_at", "2019-02-11 20:54:49.283170"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to marlyn@barrows.io (3.9ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: marlyn@barrows.io
+Message-ID: <5c61e119467d0_48ad3fd020840e4c70198@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11945bf8_48ad3fd020840e4c70068";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11945bf8_48ad3fd020840e4c70068
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgU2hhbmlxdWEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbWFybHluQGJh
+cnJvd3MuaW8uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZy
+L2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIg
+IQ0KDQo=
+
+----==_mimepart_5c61e11945bf8_48ad3fd020840e4c70068
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Shaniqua et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ marlyn@barrows.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11945bf8_48ad3fd020840e4c70068--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 161], ["start_date", "2019-02-14 20:54:49.291319"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 79], ["location", "Collinsfort"], ["created_at", "2019-02-11 20:54:49.292491"], ["updated_at", "2019-02-11 20:54:49.292491"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "marybeth@kertzmann.name"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Russ"], ["last_name", "Jacobi"], ["created_at", "2019-02-11 20:54:49.301978"], ["updated_at", "2019-02-11 20:54:49.301978"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to marybeth@kertzmann.name (2.8ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: marybeth@kertzmann.name
+Message-ID: <5c61e1194ac6c_48ad3fd020840e4c70390@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1194a540_48ad3fd020840e4c70236";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1194a540_48ad3fd020840e4c70236
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUnVzcyBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3QuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBtYXJ5YmV0aEBrZXJ0
+em1hbm4ubmFtZS4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3Qu
+ZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5m
+ciAhDQoNCg==
+
+----==_mimepart_5c61e1194a540_48ad3fd020840e4c70236
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Russ et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ marybeth@kertzmann.name.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1194a540_48ad3fd020840e4c70236--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 162], ["start_date", "2019-02-14 20:54:49.308785"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 562], ["location", "North Emerita"], ["created_at", "2019-02-11 20:54:49.310020"], ["updated_at", "2019-02-11 20:54:49.310020"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "rickidach@deckow.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Frederick"], ["last_name", "Greenfelder"], ["created_at", "2019-02-11 20:54:49.321659"], ["updated_at", "2019-02-11 20:54:49.321659"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.4ms
+Sent mail to rickidach@deckow.com (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: rickidach@deckow.com
+Message-ID: <5c61e1194fa32_48ad3fd020840e4c70546@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1194f323_48ad3fd020840e4c70437";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1194f323_48ad3fd020840e4c70437
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRnJlZGVyaWNrIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVj
+dC5mciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHJpY2tpZGFj
+aEBkZWNrb3cuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2Ug
+Y2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVj
+dC5mci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0
+LmZyICENCg0K
+
+----==_mimepart_5c61e1194f323_48ad3fd020840e4c70437
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Frederick et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ rickidach@deckow.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1194f323_48ad3fd020840e4c70437--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 163], ["start_date", "2019-02-14 20:54:49.328668"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 235], ["location", "Lake Patriaport"], ["created_at", "2019-02-11 20:54:49.330195"], ["updated_at", "2019-02-11 20:54:49.330195"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "clayton@murphy.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Pattie"], ["last_name", "Kautzer"], ["created_at", "2019-02-11 20:54:49.339771"], ["updated_at", "2019-02-11 20:54:49.339771"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to clayton@murphy.biz (2.8ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: clayton@murphy.biz
+Message-ID: <5c61e11954041_48ad3fd020840e4c707ce@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e11953937_48ad3fd020840e4c706dd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e11953937_48ad3fd020840e4c706dd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUGF0dGllIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGNsYXl0b25AbXVy
+cGh5LmJpei4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIv
+bG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAh
+DQoNCg==
+
+----==_mimepart_5c61e11953937_48ad3fd020840e4c706dd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Pattie et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ clayton@murphy.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e11953937_48ad3fd020840e4c706dd--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 164], ["start_date", "2019-02-14 20:54:49.346622"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 585], ["location", "West Jeffryland"], ["created_at", "2019-02-11 20:54:49.347980"], ["updated_at", "2019-02-11 20:54:49.347980"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "haywoodherman@gerholddaugherty.name"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Dion"], ["last_name", "Halvorson"], ["created_at", "2019-02-11 20:54:49.359483"], ["updated_at", "2019-02-11 20:54:49.359483"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to haywoodherman@gerholddaugherty.name (3.2ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: haywoodherman@gerholddaugherty.name
+Message-ID: <5c61e11958c99_48ad3fd020840e4c7091d@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e119585c6_48ad3fd020840e4c70849";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e119585c6_48ad3fd020840e4c70849
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRGlvbiBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3QuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBoYXl3b29kaGVybWFu
+QGdlcmhvbGRkYXVnaGVydHkubmFtZS4NCg0KUG91ciBhY2PDqWRlciDDoCB0
+b24gZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9l
+dmVudHByb2plY3QuZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2
+ZW50cHJvamVjdC5mciAhDQoNCg==
+
+----==_mimepart_5c61e119585c6_48ad3fd020840e4c70849
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Dion et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ haywoodherman@gerholddaugherty.name.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e119585c6_48ad3fd020840e4c70849--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "alvahoeger@murray.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Michel"], ["last_name", "Hand"], ["created_at", "2019-02-11 20:54:49.372004"], ["updated_at", "2019-02-11 20:54:49.372004"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to alvahoeger@murray.biz (2.7ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: alvahoeger@murray.biz
+Message-ID: <5c61e1195bdf6_48ad3fd020840e4c71175@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1195b71f_48ad3fd020840e4c710c7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1195b71f_48ad3fd020840e4c710c7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWljaGVsIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGFsdmFob2VnZXJA
+bXVycmF5LmJpei4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3Qu
+ZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5m
+ciAhDQoNCg==
+
+----==_mimepart_5c61e1195b71f_48ad3fd020840e4c710c7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Michel et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ alvahoeger@murray.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1195b71f_48ad3fd020840e4c710c7--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "edwinreichel@bauchkiehn.co"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Leesa"], ["last_name", "Cremin"], ["created_at", "2019-02-11 20:54:49.383343"], ["updated_at", "2019-02-11 20:54:49.383343"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.5ms
+Sent mail to edwinreichel@bauchkiehn.co (4.6ms)
+Date: Mon, 11 Feb 2019 21:54:49 +0100
+From: no-reply@eventproject.fr
+To: edwinreichel@bauchkiehn.co
+Message-ID: <5c61e1195f165_48ad3fd020840e4c7133a@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e1195e429_48ad3fd020840e4c712ef";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e1195e429_48ad3fd020840e4c712ef
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGVlc2EgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogZWR3aW5yZWljaGVs
+QGJhdWNoa2llaG4uY28uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFj
+ZSBjbGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9q
+ZWN0LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2pl
+Y3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e1195e429_48ad3fd020840e4c712ef
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Leesa et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ edwinreichel@bauchkiehn.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e1195e429_48ad3fd020840e4c712ef--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "chung@trantow.info"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Elna"], ["last_name", "Kutch"], ["created_at", "2019-02-11 20:56:12.685552"], ["updated_at", "2019-02-11 20:56:12.685552"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.4ms)
+UserMailer#welcome_email: processed outbound mail in 49.5ms
+Sent mail to chung@trantow.info (5.0ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: chung@trantow.info
+Message-ID: <5c61e16cb494a_48d23fdae6442e3c2297f@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cb39db_48d23fdae6442e3c22895";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cb39db_48d23fdae6442e3c22895
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRWxuYSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3QuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBjaHVuZ0B0cmFudG93
+LmluZm8uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xv
+Z2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0K
+DQo=
+
+----==_mimepart_5c61e16cb39db_48d23fdae6442e3c22895
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Elna et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ chung@trantow.info.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cb39db_48d23fdae6442e3c22895--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 168], ["start_date", "2019-02-14 20:56:12.745827"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 350], ["location", "Port Lacreshachester"], ["created_at", "2019-02-11 20:56:12.749215"], ["updated_at", "2019-02-11 20:56:12.749215"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "arnold@anderson.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Vannesa"], ["last_name", "Koss"], ["created_at", "2019-02-11 20:56:12.757489"], ["updated_at", "2019-02-11 20:56:12.757489"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.2ms
+Sent mail to arnold@anderson.net (8.7ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: arnold@anderson.net
+Message-ID: <5c61e16cbbc29_48d23fdae6442e3c231c6@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cba0f4_48d23fdae6442e3c230b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cba0f4_48d23fdae6442e3c230b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVmFubmVzYSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBhcm5vbGRAYW5k
+ZXJzb24ubmV0Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e16cba0f4_48d23fdae6442e3c230b0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Vannesa et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ arnold@anderson.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cba0f4_48d23fdae6442e3c230b0--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 169], ["event_id", 67], ["created_at", "2019-02-11 20:56:12.777534"], ["updated_at", "2019-02-11 20:56:12.777534"]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (0.4ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#new_attendee_email: processed outbound mail in 28.4ms
+Sent mail to chung@trantow.info (4.0ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: chung@trantow.info
+Message-ID: <5c61e16cc57a3_48d23fdae6442e3c23350@MBP-de-Margaux.mail>
+Subject: Nouvel inscrit
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cc4bd2_48d23fdae6442e3c232bc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cc4bd2_48d23fdae6442e3c232bc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRWxuYSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KTCd1dGlsaXNhdGV1ciBWYW5uZXNhIHZpZW50IGRlIHNlIHJh
+am91dGVyIMOgIHRvbiDDqXbDqG5lbWVudCBMb3JlbSBJcHN1bS4NCg0KUG91
+ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9p
+IHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIvbG9naW4uDQoNCsOAIHRy
+w6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAhDQoNCg==
+
+----==_mimepart_5c61e16cc4bd2_48d23fdae6442e3c232bc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Elna !</h1>=0D
+    <p>=0D
+      L'utilisateur Vannesa vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8=
+nement Lorem Ipsum.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cc4bd2_48d23fdae6442e3c232bc--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "juliettekertzmann@williamson.co"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Vincenzo"], ["last_name", "Hirthe"], ["created_at", "2019-02-11 20:56:12.814680"], ["updated_at", "2019-02-11 20:56:12.814680"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 4.6ms
+Sent mail to juliettekertzmann@williamson.co (23.1ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: juliettekertzmann@williamson.co
+Message-ID: <5c61e16cc932f_48d23fdae6442e3c2354c@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cc7c04_48d23fdae6442e3c2347d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cc7c04_48d23fdae6442e3c2347d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVmluY2Vuem8gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDoganVsaWV0dGVr
+ZXJ0em1hbm5Ad2lsbGlhbXNvbi5jby4NCg0KUG91ciBhY2PDqWRlciDDoCB0
+b24gZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9l
+dmVudHByb2plY3QuZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2
+ZW50cHJvamVjdC5mciAhDQoNCg==
+
+----==_mimepart_5c61e16cc7c04_48d23fdae6442e3c2347d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Vincenzo et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ juliettekertzmann@williamson.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cc7c04_48d23fdae6442e3c2347d--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 170], ["start_date", "2019-02-14 20:56:12.844168"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 985], ["location", "Howardtown"], ["created_at", "2019-02-11 20:56:12.845703"], ["updated_at", "2019-02-11 20:56:12.845703"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "ardath@parisian.io"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Gregory"], ["last_name", "Deckow"], ["created_at", "2019-02-11 20:56:12.848633"], ["updated_at", "2019-02-11 20:56:12.848633"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.6ms
+Sent mail to ardath@parisian.io (3.0ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: ardath@parisian.io
+Message-ID: <5c61e16cd04ef_48d23fdae6442e3c23764@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16ccfd41_48d23fdae6442e3c2363";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16ccfd41_48d23fdae6442e3c2363
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgR3JlZ29yeSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBhcmRhdGhAcGFy
+aXNpYW4uaW8uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZy
+L2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIg
+IQ0KDQo=
+
+----==_mimepart_5c61e16ccfd41_48d23fdae6442e3c2363
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Gregory et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ ardath@parisian.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16ccfd41_48d23fdae6442e3c2363--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "jamilaharris@mcclurehilll.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Jan"], ["last_name", "Torphy"], ["created_at", "2019-02-11 20:56:12.859850"], ["updated_at", "2019-02-11 20:56:12.859850"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to jamilaharris@mcclurehilll.com (3.0ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: jamilaharris@mcclurehilll.com
+Message-ID: <5c61e16cd2fec_48d23fdae6442e3c2394e@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cd2867_48d23fdae6442e3c23873";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cd2867_48d23fdae6442e3c23873
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSmFuIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGphbWlsYWhhcnJpc0Bt
+Y2NsdXJlaGlsbGwuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3Bh
+Y2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJv
+amVjdC5mci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9q
+ZWN0LmZyICENCg0K
+
+----==_mimepart_5c61e16cd2867_48d23fdae6442e3c23873
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Jan et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ jamilaharris@mcclurehilll.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cd2867_48d23fdae6442e3c23873--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 172], ["start_date", "2019-02-14 20:56:12.867000"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 129], ["location", "South Jonathan"], ["created_at", "2019-02-11 20:56:12.868355"], ["updated_at", "2019-02-11 20:56:12.868355"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "nolatorp@zieme.name"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Tomeka"], ["last_name", "Jacobs"], ["created_at", "2019-02-11 20:56:12.875040"], ["updated_at", "2019-02-11 20:56:12.875040"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 7.5ms
+Sent mail to nolatorp@zieme.name (11.4ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: nolatorp@zieme.name
+Message-ID: <5c61e16cd9137_48d23fdae6442e3c2415f@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cd7478_48d23fdae6442e3c24020";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cd7478_48d23fdae6442e3c24020
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVG9tZWthIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG5vbGF0b3JwQHpp
+ZW1lLm5hbWUuDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZy
+L2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIg
+IQ0KDQo=
+
+----==_mimepart_5c61e16cd7478_48d23fdae6442e3c24020
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tomeka et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ nolatorp@zieme.name.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cd7478_48d23fdae6442e3c24020--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("attendee_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["attendee_id", 173], ["event_id", 69], ["created_at", "2019-02-11 20:56:12.898137"], ["updated_at", "2019-02-11 20:56:12.898137"]]
+  Rendering user_mailer/new_attendee_email.html.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/new_attendee_email.text.erb within layouts/mailer
+  Rendered user_mailer/new_attendee_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#new_attendee_email: processed outbound mail in 5.8ms
+Sent mail to jamilaharris@mcclurehilll.com (7.8ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: jamilaharris@mcclurehilll.com
+Message-ID: <5c61e16cddb97_48d23fdae6442e3c24319@MBP-de-Margaux.mail>
+Subject: Nouvel inscrit
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cdc798_48d23fdae6442e3c2427c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cdc798_48d23fdae6442e3c2427c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSmFuIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PQ0KDQpMJ3V0aWxpc2F0ZXVyIFRvbWVrYSB2aWVudCBkZSBzZSByYWpv
+dXRlciDDoCB0b24gw6l2w6huZW1lbnQgTG9yZW0gSXBzdW0uDQoNClBvdXIg
+YWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNvbm5lY3RlLXRvaSB2
+aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xvZ2luLg0KDQrDgCB0csOo
+cyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16cdc798_48d23fdae6442e3c2427c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Jan !</h1>=0D
+    <p>=0D
+      L'utilisateur Tomeka vient de se rajouter =C3=A0 ton =C3=A9v=C3=A8n=
+ement Lorem Ipsum.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cdc798_48d23fdae6442e3c2427c--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "shavon@carroll.info"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Jesus"], ["last_name", "Connelly"], ["created_at", "2019-02-11 20:56:12.921764"], ["updated_at", "2019-02-11 20:56:12.921764"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 4.7ms
+Sent mail to shavon@carroll.info (4.5ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: shavon@carroll.info
+Message-ID: <5c61e16ce2dc2_48d23fdae6442e3c2459b@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16ce2337_48d23fdae6442e3c2446c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16ce2337_48d23fdae6442e3c2446c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSmVzdXMgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogc2hhdm9uQGNhcnJv
+bGwuaW5mby4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIv
+bG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAh
+DQoNCg==
+
+----==_mimepart_5c61e16ce2337_48d23fdae6442e3c2446c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Jesus et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ shavon@carroll.info.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16ce2337_48d23fdae6442e3c2446c--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 174], ["start_date", "2019-02-14 20:56:12.932838"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 101], ["location", "New Lawanaview"], ["created_at", "2019-02-11 20:56:12.934726"], ["updated_at", "2019-02-11 20:56:12.934726"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "pamilajones@fay.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Zora"], ["last_name", "Feil"], ["created_at", "2019-02-11 20:56:12.941447"], ["updated_at", "2019-02-11 20:56:12.941447"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 8.5ms
+Sent mail to pamilajones@fay.com (2.9ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: pamilajones@fay.com
+Message-ID: <5c61e16ce8bc9_48d23fdae6442e3c2474a@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16ce76e5_48d23fdae6442e3c2462";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16ce76e5_48d23fdae6442e3c2462
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgWm9yYSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3QuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBwYW1pbGFqb25lc0Bm
+YXkuY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50
+LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5mci9s
+b2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZyICEN
+Cg0K
+
+----==_mimepart_5c61e16ce76e5_48d23fdae6442e3c2462
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Zora et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ pamilajones@fay.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16ce76e5_48d23fdae6442e3c2462--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "dotty@feest.co"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Mason"], ["last_name", "Weber"], ["created_at", "2019-02-11 20:56:12.960256"], ["updated_at", "2019-02-11 20:56:12.960256"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.3ms
+Sent mail to dotty@feest.co (3.0ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: dotty@feest.co
+Message-ID: <5c61e16ceb823_48d23fdae6442e3c249d9@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16ceb03a_48d23fdae6442e3c2485e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16ceb03a_48d23fdae6442e3c2485e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFzb24gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogZG90dHlAZmVlc3Qu
+Y28uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNv
+bm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0LmZyL2xvZ2lu
+Lg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16ceb03a_48d23fdae6442e3c2485e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Mason et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ dotty@feest.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16ceb03a_48d23fdae6442e3c2485e--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 176], ["start_date", "2019-02-14 20:56:12.967394"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 366], ["location", "Lake Carrol"], ["created_at", "2019-02-11 20:56:12.968675"], ["updated_at", "2019-02-11 20:56:12.968675"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "wileybotsford@abbottkris.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Rachell"], ["last_name", "Parisian"], ["created_at", "2019-02-11 20:56:12.973143"], ["updated_at", "2019-02-11 20:56:12.973143"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.7ms
+Sent mail to wileybotsford@abbottkris.net (4.4ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: wileybotsford@abbottkris.net
+Message-ID: <5c61e16ceec9e_48d23fdae6442e3c251e4@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cee4b1_48d23fdae6442e3c250cc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cee4b1_48d23fdae6442e3c250cc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUmFjaGVsbCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiB3aWxleWJvdHNm
+b3JkQGFiYm90dGtyaXMubmV0Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBl
+c3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50
+cHJvamVjdC5mci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRw
+cm9qZWN0LmZyICENCg0K
+
+----==_mimepart_5c61e16cee4b1_48d23fdae6442e3c250cc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Rachell et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ wileybotsford@abbottkris.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cee4b1_48d23fdae6442e3c250cc--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 177], ["start_date", "2019-02-14 20:56:12.982084"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 871], ["location", "East Zolabury"], ["created_at", "2019-02-11 20:56:12.984867"], ["updated_at", "2019-02-11 20:56:12.984867"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "verlenemurazik@jones.io"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Brain"], ["last_name", "Block"], ["created_at", "2019-02-11 20:56:12.990832"], ["updated_at", "2019-02-11 20:56:12.990832"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.2ms
+Sent mail to verlenemurazik@jones.io (3.8ms)
+Date: Mon, 11 Feb 2019 21:56:12 +0100
+From: no-reply@eventproject.fr
+To: verlenemurazik@jones.io
+Message-ID: <5c61e16cf2f55_48d23fdae6442e3c253ae@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16cf28f5_48d23fdae6442e3c252b4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16cf28f5_48d23fdae6442e3c252b4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQnJhaW4gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogdmVybGVuZW11cmF6
+aWtAam9uZXMuaW8uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0
+LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3Qu
+ZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16cf28f5_48d23fdae6442e3c252b4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Brain et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ verlenemurazik@jones.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16cf28f5_48d23fdae6442e3c252b4--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 178], ["start_date", "2019-02-14 20:56:12.998734"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 943], ["location", "Lake Lilaport"], ["created_at", "2019-02-11 20:56:12.999798"], ["updated_at", "2019-02-11 20:56:12.999798"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "milagrosheller@schmidt.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Bridgett"], ["last_name", "Dooley"], ["created_at", "2019-02-11 20:56:13.010633"], ["updated_at", "2019-02-11 20:56:13.010633"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 3.4ms
+Sent mail to milagrosheller@schmidt.net (2.7ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: milagrosheller@schmidt.net
+Message-ID: <5c61e16d3fdc_48d23fdae6442e3c2559f@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d393c_48d23fdae6442e3c254ec";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d393c_48d23fdae6442e3c254ec
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQnJpZGdldHQgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbWlsYWdyb3No
+ZWxsZXJAc2NobWlkdC5uZXQuDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVz
+cGFjZSBjbGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRw
+cm9qZWN0LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHBy
+b2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16d393c_48d23fdae6442e3c254ec
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Bridgett et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ milagrosheller@schmidt.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d393c_48d23fdae6442e3c254ec--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 179], ["start_date", "2019-02-14 20:56:13.018754"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 65], ["location", "Lake Donovanmouth"], ["created_at", "2019-02-11 20:56:13.019913"], ["updated_at", "2019-02-11 20:56:13.019913"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "marcelhickle@boyer.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Cicely"], ["last_name", "Ryan"], ["created_at", "2019-02-11 20:56:13.029811"], ["updated_at", "2019-02-11 20:56:13.029811"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 1.9ms
+Sent mail to marcelhickle@boyer.net (2.5ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: marcelhickle@boyer.net
+Message-ID: <5c61e16d82cc_48d23fdae6442e3c257eb@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d7ca1_48d23fdae6442e3c256ab";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d7ca1_48d23fdae6442e3c256ab
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ2ljZWx5IGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG1hcmNlbGhpY2ts
+ZUBib3llci5uZXQuDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRwcm9qZWN0
+LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHByb2plY3Qu
+ZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16d7ca1_48d23fdae6442e3c256ab
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Cicely et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ marcelhickle@boyer.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d7ca1_48d23fdae6442e3c256ab--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 180], ["start_date", "2019-02-14 20:56:13.035751"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 540], ["location", "Murrayton"], ["created_at", "2019-02-11 20:56:13.036705"], ["updated_at", "2019-02-11 20:56:13.036705"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "winter@hammes.org"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Joey"], ["last_name", "Schuppe"], ["created_at", "2019-02-11 20:56:13.043046"], ["updated_at", "2019-02-11 20:56:13.043046"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 3.0ms
+Sent mail to winter@hammes.org (2.6ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: winter@hammes.org
+Message-ID: <5c61e16dbbe8_48d23fdae6442e3c25926@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16db114_48d23fdae6442e3c25866";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16db114_48d23fdae6442e3c25866
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSm9leSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3QuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiB3aW50ZXJAaGFtbWVz
+Lm9yZy4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVudCwg
+Y29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIvbG9n
+aW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAhDQoN
+Cg==
+
+----==_mimepart_5c61e16db114_48d23fdae6442e3c25866
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Joey et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ winter@hammes.org.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16db114_48d23fdae6442e3c25866--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 181], ["start_date", "2019-02-14 20:56:13.050393"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 834], ["location", "Azucenafort"], ["created_at", "2019-02-11 20:56:13.051501"], ["updated_at", "2019-02-11 20:56:13.051501"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "rodolfo@corwin.info"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Kieth"], ["last_name", "Kulas"], ["created_at", "2019-02-11 20:56:13.061387"], ["updated_at", "2019-02-11 20:56:13.061387"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.1ms
+Sent mail to rodolfo@corwin.info (3.4ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: rodolfo@corwin.info
+Message-ID: <5c61e16d100ab_48d23fdae6442e3c2617@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16df887_48d23fdae6442e3c260cc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16df887_48d23fdae6442e3c260cc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2lldGggZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogcm9kb2xmb0Bjb3J3
+aW4uaW5mby4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVudHByb2plY3QuZnIv
+bG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50cHJvamVjdC5mciAh
+DQoNCg==
+
+----==_mimepart_5c61e16df887_48d23fdae6442e3c260cc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kieth et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ rodolfo@corwin.info.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16df887_48d23fdae6442e3c260cc--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 182], ["start_date", "2019-02-14 20:56:13.068595"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 980], ["location", "South Genevieveborough"], ["created_at", "2019-02-11 20:56:13.069781"], ["updated_at", "2019-02-11 20:56:13.069781"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "alphonse@runolfon.com"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Soila"], ["last_name", "Steuber"], ["created_at", "2019-02-11 20:56:13.081149"], ["updated_at", "2019-02-11 20:56:13.081149"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.1ms
+Sent mail to alphonse@runolfon.com (2.7ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: alphonse@runolfon.com
+Message-ID: <5c61e16d14ccc_48d23fdae6442e3c2633e@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d145aa_48d23fdae6442e3c262cb";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d145aa_48d23fdae6442e3c262cb
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgU29pbGEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogYWxwaG9uc2VAcnVu
+b2xmb24uY29tLg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e16d145aa_48d23fdae6442e3c262cb
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Soila et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ alphonse@runolfon.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d145aa_48d23fdae6442e3c262cb--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 183], ["start_date", "2019-02-14 20:56:13.087591"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 302], ["location", "West Katheyborough"], ["created_at", "2019-02-11 20:56:13.088728"], ["updated_at", "2019-02-11 20:56:13.088728"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "maudebayer@runte.biz"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Mirtha"], ["last_name", "Hartmann"], ["created_at", "2019-02-11 20:56:13.095528"], ["updated_at", "2019-02-11 20:56:13.095528"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.1ms
+Sent mail to maudebayer@runte.biz (2.7ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: maudebayer@runte.biz
+Message-ID: <5c61e16d18900_48d23fdae6442e3c265ca@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d18224_48d23fdae6442e3c2643f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d18224_48d23fdae6442e3c2643f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWlydGhhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KDQpUdSB0J2VzIGluc2NyaXQgc3VyIGV2ZW50cHJvamVjdC5m
+ciBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG1hdWRlYmF5ZXJA
+cnVudGUuYml6Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e16d18224_48d23fdae6442e3c2643f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Mirtha et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ maudebayer@runte.biz.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d18224_48d23fdae6442e3c2643f--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("admin_id", "start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["admin_id", 184], ["start_date", "2019-02-14 20:56:13.103086"], ["duration", 10], ["title", "Lorem Ipsum"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["price", 806], ["location", "Ratkeport"], ["created_at", "2019-02-11 20:56:13.104073"], ["updated_at", "2019-02-11 20:56:13.104073"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "vitoschroeder@tillmanfeest.name"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Lelia"], ["last_name", "Cruickshank"], ["created_at", "2019-02-11 20:56:13.114638"], ["updated_at", "2019-02-11 20:56:13.114638"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 2.0ms
+Sent mail to vitoschroeder@tillmanfeest.name (2.5ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: vitoschroeder@tillmanfeest.name
+Message-ID: <5c61e16d1d025_48d23fdae6442e3c26759@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d1c942_48d23fdae6442e3c26611";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d1c942_48d23fdae6442e3c26611
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGVsaWEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0LmZy
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogdml0b3NjaHJvZWRl
+ckB0aWxsbWFuZmVlc3QubmFtZS4NCg0KUG91ciBhY2PDqWRlciDDoCB0b24g
+ZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHA6Ly9ldmVu
+dHByb2plY3QuZnIvbG9naW4uDQoNCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50
+cHJvamVjdC5mciAhDQoNCg==
+
+----==_mimepart_5c61e16d1c942_48d23fdae6442e3c26611
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Lelia et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ vitoschroeder@tillmanfeest.name.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d1c942_48d23fdae6442e3c26611--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "delilah@kovacek.net"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Rogelio"], ["last_name", "Torp"], ["created_at", "2019-02-11 20:56:13.124902"], ["updated_at", "2019-02-11 20:56:13.124902"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 3.5ms
+Sent mail to delilah@kovacek.net (2.5ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: delilah@kovacek.net
+Message-ID: <5c61e16d1ff0b_48d23fdae6442e3c26923@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d1f454_48d23fdae6442e3c268eb";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d1f454_48d23fdae6442e3c268eb
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUm9nZWxpbyBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCg0KVHUgdCdlcyBpbnNjcml0IHN1ciBldmVudHByb2plY3Qu
+ZnIgZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBkZWxpbGFoQGtv
+dmFjZWsubmV0Lg0KDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cDovL2V2ZW50cHJvamVjdC5m
+ci9sb2dpbi4NCg0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRwcm9qZWN0LmZy
+ICENCg0K
+
+----==_mimepart_5c61e16d1f454_48d23fdae6442e3c268eb
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Rogelio et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ delilah@kovacek.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d1f454_48d23fdae6442e3c268eb--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "francesco@kundekohler.info"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."], ["first_name", "Bernetta"], ["last_name", "Wunsch"], ["created_at", "2019-02-11 20:56:13.136269"], ["updated_at", "2019-02-11 20:56:13.136269"]]
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 1.9ms
+Sent mail to francesco@kundekohler.info (2.8ms)
+Date: Mon, 11 Feb 2019 21:56:13 +0100
+From: no-reply@eventproject.fr
+To: francesco@kundekohler.info
+Message-ID: <5c61e16d22309_48d23fdae6442e3c2717e@MBP-de-Margaux.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c61e16d21caf_48d23fdae6442e3c270e4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c61e16d21caf_48d23fdae6442e3c270e4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQmVybmV0dGEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQoNClR1IHQnZXMgaW5zY3JpdCBzdXIgZXZlbnRwcm9qZWN0
+LmZyIGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogZnJhbmNlc2Nv
+QGt1bmRla29obGVyLmluZm8uDQoNClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVz
+cGFjZSBjbGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwOi8vZXZlbnRw
+cm9qZWN0LmZyL2xvZ2luLg0KDQrDgCB0csOocyB2aXRlIHN1ciBldmVudHBy
+b2plY3QuZnIgIQ0KDQo=
+
+----==_mimepart_5c61e16d21caf_48d23fdae6442e3c270e4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Bernetta et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur eventproject.fr en utilisant l'e-mail suivant :=
+ francesco@kundekohler.info.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+://eventproject.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventproject.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5c61e16d21caf_48d23fdae6442e3c270e4--
+
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
