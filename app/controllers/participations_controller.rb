@@ -17,7 +17,7 @@ class ParticipationsController < ApplicationController
     if already_participating?
       flash[:danger] = "You are already participating"
 
-    end
+    else
     # Amount in cents
     @event = Event.find(params[:event_id])
     @amount = @event.price * 100
@@ -38,12 +38,14 @@ class ParticipationsController < ApplicationController
     attendee = User.find(current_user[:id])
     event = Event.find(params[:event_id])
     a = Attendance.create(attendee: attendee, event: event, stripe_customer_id: customer.id)
-    redirect_to request.referrer
 
+    end
+redirect_to request.referrer
   rescue Stripe::CardError => e
     flash[:error] = e.message
     #redirect_to new_charge_path
     redirect_to request.referrer
+
   end
 
   def already_participating?
