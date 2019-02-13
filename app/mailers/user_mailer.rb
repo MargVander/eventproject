@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     @user = user
 
     #on définit une variable @url qu'on utilisera dans la view d’e-mail
-    @url  = 'http://eventproject.fr/login'
+    @url  = 'https://wannahangout.herokuapp.com/users/sign_in'
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
     mail(to: @user.email, subject: 'Bienvenue chez nous !')
@@ -19,7 +19,7 @@ class UserMailer < ApplicationMailer
     @event = attendance.event
 
     #on définit une variable @url qu'on utilisera dans la view d’e-mail
-    @url  = 'http://eventproject.fr/login'
+    @url  = 'https://wannahangout.herokuapp.com/users/sign_in'
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
     mail(to: @user.email, subject: 'Nouvel inscrit')
