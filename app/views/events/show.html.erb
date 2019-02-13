@@ -26,5 +26,25 @@
   <% if current_user.id == event.admin.id %>
   <a class="font-weight-light" href="<%=event_participations_path(event.id)%> ">See the informations</a>
   <% else %>
-  <a class="font-weight-light text-success" href="<%=event_participations_path(event.id)%> " data-method="POST">Join</a>
+
+  <%= form_tag event_participations_path(event.id) do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <p>If you want to join the event, please pay the amount of <%= event.price %> € below :
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="<%= event.price * 100 %>"
+          data-currency="eur"
+          data-locale="auto"></script>
+<% end %>
+
 <% end %>

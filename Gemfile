@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'dotenv-rails'
 gem 'devise'
 gem 'faker'
+gem 'stripe'
 
 
 # Use CoffeeScript for .coffee assets and views
