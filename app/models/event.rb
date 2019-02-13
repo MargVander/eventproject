@@ -16,7 +16,7 @@ class Event < ApplicationRecord
   validates :location,
     presence: true
   validate :future
-  validate :multiple_of_5
+  validate :multiple_of_5?
 
 
   def future
@@ -25,7 +25,7 @@ class Event < ApplicationRecord
     end
   end
 
-  def multiple_of_5
+  def multiple_of_5?
     if duration % 5 == 0
       return true
     else
