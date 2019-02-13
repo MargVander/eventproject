@@ -1,3 +1,12 @@
+<% if flash[:danger] %>
+  <div class="alert alert-dismissible alert-danger">
+    <div class="notice"><strong><%= flash[:danger] %></strong>
+     </div>
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+<% end %>
+
+
 <h1 class="font-weight-light" align="center"><%= @event.title %></h1><br>
   <% event = @event %>
   <div class="card" align="center">
@@ -13,3 +22,9 @@
   </div>
   </div>
   <p class="font-weight-light text-muted"><small>Created at : <%= event.created_at %></small></p>
+
+  <% if current_user.id == event.admin.id %>
+  <a class="font-weight-light" href="<%=event_participations_path(event.id)%> ">See the informations</a>
+  <% else %>
+  <a class="font-weight-light text-success" href="<%=event_participations_path(event.id)%> " data-method="POST">Join</a>
+<% end %>

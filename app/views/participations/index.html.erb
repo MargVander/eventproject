@@ -1,0 +1,8 @@
+<ul>
+<% @attendees.each do |attendee| %>
+<li><%= attendee.email %></li>
+<% end %>
+</ul>
+
+<a class="font-weight-light" href="<%=edit_event_path(@event.id)%> ">Edit event</a>
+<a class="font-weight-light text-danger" href="<%=event_path(@event.id)%> "data-confirm= 'Are you sure ?' data-method="DELETE">Delete event</a>
