@@ -18,6 +18,7 @@ class EventsController < ApplicationController
      @event = Event.new(start_date: params["start_date"], duration: duration, title: params["title"], description: params["description"], price: price, location: params["description"])
      @event.admin = current_user
      @event.save
+     @event.picture.attach(params[:picture])
      redirect_to root_path
   end
 

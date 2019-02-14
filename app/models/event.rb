@@ -2,6 +2,7 @@ class Event < ApplicationRecord
   belongs_to :admin, class_name: "User"
   has_many :attendances
   has_many :attendees, through: :attendances
+  has_one_attached :picture
   validates :start_date, presence: true
   validates :duration, presence: true, numericality: { only_integer: true }#,  if: :multiple_of_5
   validates :title,

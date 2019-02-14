@@ -1,24 +1,33 @@
-# README
+<img style="width: 500px" src="https://media0.giphy.com/media/4CP58gxwbBy2Q/giphy.gif" alt="mean girl"/>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# WANNA HANG OUT ?
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Vous pouvez retrouvez mon site au https://wannahangout.herokuapp.com
 
-* System dependencies
+Si vous voulez voir en local :
 
-* Configuration
+Git clone le projet.
+Placez-vous à la racine,  puis dans le terminal :
 
-* Database creation
+`bundle install`
+`rails db:migrate`  => si il y a des migrations down.
+`rails db:seed`  => vous charge une base de donnée aléatoire.
 
-* Database initialization
+`PUBLISHABLE_KEY=pk_test_TYooMQauvdEDq54NiTphI7jx SECRET_KEY=sk_test_4eC39HqLyjWDarjtT1zdp7dc rails s` => pour voir le site sur http://localhost:3000
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Built With
+
+* [Ruby on rails](https://rubyonrails.org/) - The web framework used
+
+
+
+## Authors
+
+* **Margaux Vanderbeken**
+
+<img style="width: 500px" src="https://thumbs.gfycat.com/BlondBabyishAlpinegoat-size_restricted.gif" alt="michael scott"/>

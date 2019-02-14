@@ -6,9 +6,16 @@
   </div>
 <% end %>
 
+<% event = @event %>
+<%if event.picture.attached?%>
+<div align="center">
+<%= image_tag event.picture, alt: 'event', class: "avatar"%>
+</div>
+<p></p>
+<%else%>
+<%end%>
 
 <h1 class="font-weight-light" align="center"><%= @event.title %></h1><br>
-  <% event = @event %>
   <div class="card" align="center">
   <div class="card-body col-sm-10">
     <blockquote class="blockquote mb-0 text-left">
@@ -16,7 +23,11 @@
       <p class="text-muted small">Le <%= event.start_date %> pendant <%= event.duration %> minutes <br>
       A <%= event.location %> <br>
       <%= event.attendees.count %> inscrit(s)</p>
+      <%if event.admin.avatar.attached?%>
+      <footer class="blockquote-footer"><a class="text-muted" href="<%=user_path(event.admin.id)%>"><%= image_tag event.admin.avatar, alt: 'avatar', class: "avatarevent"%>  <%= event.admin.email %></a></footer>
+      <%else%>
       <footer class="blockquote-footer"><a class="text-muted" href="<%=user_path(event.admin.id)%>"><%= event.admin.email %></a></footer>
+      <%end%>
 
     </blockquote>
   </div>

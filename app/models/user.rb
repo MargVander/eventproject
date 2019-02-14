@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :events, foreign_key: 'admin_id', class_name: "Event"
   has_many :attendances, foreign_key: 'attendee_id', class_name: "Attendance"
   has_many :events, through: :attendances
+  has_one_attached :avatar
   validates :email,
     presence: true,
     format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, message: "email adress please" }

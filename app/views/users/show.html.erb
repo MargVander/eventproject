@@ -7,8 +7,20 @@
 <div class="card" align="center">
 <div class="card-body col-sm-10">
   <blockquote class="blockquote mb-0 text-left">
+    <%if @user.avatar.attached?%>
+    <div align="center">
+    <%= image_tag @user.avatar, alt: 'avatar', class: "avatar"%>
+    <p></p>
+    </div>
+  <%else%>
+  <%end%>
+<%= form_tag user_avatars_path(@user), multipart: true do %>
+  <%= file_field_tag :avatar %>
+  <%= submit_tag "mettre à jour" %>
+<% end %>
     <p class="text-muted"><%= user.email %><br>
     <p class="font-italic font-weight-light">"<%= user.description %>"</p>
   </blockquote>
+
 </div>
 </div>
