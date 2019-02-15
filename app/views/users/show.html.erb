@@ -14,7 +14,7 @@
     </div>
   <%else%>
   <%end%>
-<%= form_tag user_avatars_path(@user.id), multipart: true do %>
+<%= form_tag user_avatars_path(@user.id), method: "post", multipart: true do %>
   <%= file_field_tag :avatar %>
   <%= submit_tag "mettre à jour" %>
 <% end %>
