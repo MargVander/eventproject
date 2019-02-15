@@ -25879,3 +25879,443 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/events/1" for 127.0.0.1 at 2019-02-14 21:58:54 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:40
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Event"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attendances" ON "users"."id" = "attendances"."attendee_id" WHERE "attendances"."event_id" = $1[0m  [["event_id", 1]]
+  ↳ app/views/events/show.html.erb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  Rendered events/show.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 347ms (Views: 293.7ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-14 21:58:57 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:5
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  Rendered events/index.html.erb within layouts/application (43.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Completed 200 OK in 97ms (Views: 83.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--165e8b26b716ebdc53652f1a6affbf044131946f/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--165e8b26b716ebdc53652f1a6affbf044131946f", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Started GET "/events/13" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--928b04e93fcd70e2dd8cfc3a94342ed06ef890cf/c%20cho.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Processing by ActiveStorage::BlobsController#show as JPEG
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/warden-1.2.8/lib/warden/manager.rb:36
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--928b04e93fcd70e2dd8cfc3a94342ed06ef890cf", "filename"=>"c cho"}
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by EventsController#show as HTML
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/warden-1.2.8/lib/warden/manager.rb:36
+  Parameters: {"id"=>"13"}
+[36m  Disk Storage (105.3ms) [0m[34mGenerated URL for file at key: 6feqYrGSifiUYLbNrbE1Fxwe (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg)[0m
+  [1m[36mUser Load (107.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: CHaavvpPbWRkWcvnfTHyfHAh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg
+Completed 302 Found in 177ms (ActiveRecord: 5.2ms)
+
+
+Completed 302 Found in 116ms (ActiveRecord: 111.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:40
+  Rendering events/show.html.erb within layouts/application
+Processing by ActiveStorage::DiskController#show as JPEG
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Event"], ["name", "picture"], ["LIMIT", 1]]
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+  ↳ app/views/events/show.html.erb:10
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attendances" ON "users"."id" = "attendances"."attendee_id" WHERE "attendances"."event_id" = $1[0m  [["event_id", 13]]
+  ↳ app/views/events/show.html.erb:25
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  Rendered events/show.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 224ms (Views: 56.1ms | ActiveRecord: 159.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:58:59 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-14 21:59:01 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:01 +0100
+  ↳ app/views/events/index.html.erb:11
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:01 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+  ↳ app/views/events/index.html.erb:11
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  Rendered events/index.html.erb within layouts/application (56.0ms)
+  [1m[36mUser Load (51.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Completed 200 OK in 169ms (Views: 104.9ms | ActiveRecord: 57.4ms)
+
+
+Started GET "/events/13" for 127.0.0.1 at 2019-02-14 21:59:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:34 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"13"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:40
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (6.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Event"], ["name", "picture"], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attendances" ON "users"."id" = "attendances"."attendee_id" WHERE "attendances"."event_id" = $1[0m  [["event_id", 13]]
+  ↳ app/views/events/show.html.erb:25
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:26
+  Rendered events/show.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 82ms (Views: 47.7ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:34 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:34 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2019-02-14 21:59:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:37 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:37 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:41 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:41 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:41 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490/1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%221968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg%22%3B+filename%2A%3DUTF-8%27%271968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg" for 127.0.0.1 at 2019-02-14 21:59:42 +0100
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 21:59:42 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg\"; filename*=UTF-8''1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRObVpsY1ZseVIxTnBabWxWV1V4aVRuSmlSVEZHZUhkbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSUJubWx1YkdsdVpUc2dabWxzWlc1aGJXVTlJakU1TmpoZmIzUjBiMkp5WlY5b1lYSnllVjl3WldOamFXNXZkSFJwWDJwd1oxODVOalF3WDI1dmNuUm9YekV4TmpCNFgzZG9hWFJsTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25NVGsyT0Y5dmRIUnZZbkpsWDJoaGNuSjVYM0JsWTJOcGJtOTBkR2xmYW5Cblh6azJOREJmYm05eWRHaGZNVEUyTUhoZmQyaHBkR1V1YW5CbkJqc0dWRG9SWTI5dWRHVnVkRjkwZVhCbFNTSVBhVzFoWjJVdmFuQmxad1k3QmxRPSIsImV4cCI6IjIwMTktMDItMTRUMjE6MDM6NTkuNzE0WiIsInB1ciI6ImJsb2Jfa2V5In19--e8206efa0c41d0581fb26ed5512744fbef8d2490", "filename"=>"1968_ottobre_harry_peccinotti_jpg_9640_north_1160x_white"}
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMTowMzo1OS43MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--8161b515f509a6431f59b7f18d51f34ffb31b003", "filename"=>"c cho"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--928b04e93fcd70e2dd8cfc3a94342ed06ef890cf/c%20cho.jpg" for 127.0.0.1 at 2019-02-14 22:11:06 +0100
+Started GET "/users/11" for 127.0.0.1 at 2019-02-14 22:11:06 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by UsersController#show as HTML
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--928b04e93fcd70e2dd8cfc3a94342ed06ef890cf", "filename"=>"c cho"}
+  Parameters: {"id"=>"11"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/warden-1.2.8/lib/warden/manager.rb:36
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+[36m  Disk Storage (107.7ms) [0m[34mGenerated URL for file at key: CHaavvpPbWRkWcvnfTHyfHAh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg
+Completed 302 Found in 158ms (ActiveRecord: 4.9ms)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 22:11:07 +0100
+  Rendering users/show.html.erb within layouts/application
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6", "filename"=>"c cho"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 486ms (Views: 317.3ms | ActiveRecord: 39.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 22:11:07 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6", "filename"=>"c cho"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/11/avatars" for 127.0.0.1 at 2019-02-14 22:11:08 +0100
+Processing by AvatarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cqh4GfdAU6vVijzZLbTZI8Y9Zd5npmU4gt1YhEMdhr2Vvx9tNnDfQ3qlu5O2GcaFTA9vsSZBewKAocoMW6VNmQ==", "commit"=>"mettre à jour", "user_id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/avatars_controller.rb:4
+Completed 422 Unprocessable Entity in 12ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotSaved (Failed to save the new associated avatar_attachment.):
+  
+app/controllers/avatars_controller.rb:4:in `create'
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6/c%20cho.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22c+cho.jpg%22%3B+filename%2A%3DUTF-8%27%27c%2520cho.jpg" for 127.0.0.1 at 2019-02-14 22:11:22 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"c cho.jpg\"; filename*=UTF-8''c%20cho.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRRMGhoWVhaMmNGQmlWMUpyVjJOMmJtWlVTSGxtU0VGb0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlZeUJqYUc4dWFuQm5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWRqSlRJd1kyaHZMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAxOS0wMi0xNFQyMToxNjowNy4wMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--c3dcd87c2da237061e7b7e0c5407158ec860d4e6", "filename"=>"c cho"}
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/11/avatars" for 127.0.0.1 at 2019-02-14 22:11:27 +0100
+Processing by AvatarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KrTluiwUzA+vvYM9GaHMMMC77HOdvke5kTGMlWcUKb3No4LO7SRA5wCSBHeCDNOWSonmHNxZWYOTTR4df6zimQ==", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a5bc09c88 @tempfile=#<Tempfile:/var/folders/jn/bk8nb7l55296b3lj1mbc0gm00000gn/T/RackMultipart20190214-27896-153wvmy.jpg>, @original_filename="2634-sarandon.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"avatar\"; filename=\"2634-sarandon.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"mettre à jour", "user_id"=>"11"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:3
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:4
+[36m  Disk Storage (2.4ms) [0m[32mUploaded file to key: WgoF4FAECa1ExUGP8t4oEUCu (checksum: yEYLQD5oBEHMkNBj3mPZbg==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "WgoF4FAECa1ExUGP8t4oEUCu"], ["filename", "2634-sarandon.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 36432], ["checksum", "yEYLQD5oBEHMkNBj3mPZbg=="], ["created_at", "2019-02-14 21:11:27.630413"]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[35m (36.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mActiveStorage::Attachment Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "User"], ["record_id", 11], ["blob_id", 4], ["created_at", "2019-02-14 21:11:27.674498"]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2019-02-14 21:11:27.677154"], ["id", 11]]
+  ↳ app/controllers/avatars_controller.rb:4
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/avatars_controller.rb:4
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 9b41bd18-9a59-4dd7-b3e5-65a6cba85568) to Async(default) with arguments: #<GlobalID:0x00007f8a6226fe28 @uri=#<URI::GID gid://event-project/ActiveStorage::Blob/4>>
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6) to Async(default) with arguments: #<GlobalID:0x00007f8a5a542d60 @uri=#<URI::GID gid://event-project/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/users/11
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 302 Found in 78ms (ActiveRecord: 41.4ms)
+
+
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/globalid-0.4.2/lib/global_id/locator.rb:130
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568] Performing ActiveStorage::AnalyzeJob (Job ID: 9b41bd18-9a59-4dd7-b3e5-65a6cba85568) from Async(default) with arguments: #<GlobalID:0x00007f8a5fe39d10 @uri=#<URI::GID gid://event-project/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568] [36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: WgoF4FAECa1ExUGP8t4oEUCu[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+Started GET "/users/11" for 127.0.0.1 at 2019-02-14 22:11:27 +0100
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   [1m[36mActiveStorage::Blob Update (1.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9b41bd18-9a59-4dd7-b3e5-65a6cba85568] Performed ActiveStorage::AnalyzeJob (Job ID: 9b41bd18-9a59-4dd7-b3e5-65a6cba85568) from Async(default) in 43.23ms
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (12.1ms)
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/globalid-0.4.2/lib/global_id/locator.rb:130
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6] Performing ActiveStorage::PurgeJob (Job ID: ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6) from Async(default) with arguments: #<GlobalID:0x00007f8a5b8f3788 @uri=#<URI::GID gid://event-project/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+Completed 200 OK in 83ms (Views: 63.1ms | ActiveRecord: 11.9ms)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   [1m[36mActiveStorage::Attachment Exists (23.0ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   [1m[36mActiveStorage::Blob Destroy (2.9ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc4ad9a131d471fd2d2f0f797a0f167604d7d01e/2634-sarandon.jpg" for 127.0.0.1 at 2019-02-14 22:11:27 +0100
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6]   ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/i18n-1.5.3/lib/i18n.rb:284
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc4ad9a131d471fd2d2f0f797a0f167604d7d01e", "filename"=>"2634-sarandon"}
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6] [36m  Disk Storage (1.1ms) [0m[31mDeleted file from key: CHaavvpPbWRkWcvnfTHyfHAh[0m
+  ↳ /Users/margauxvanderbeken/.rvm/gems/ruby-2.5.1/gems/warden-1.2.8/lib/warden/manager.rb:36
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6] [36m  Disk Storage (0.2ms) [0m[31mDeleted files by key prefix: variants/CHaavvpPbWRkWcvnfTHyfHAh/[0m
+[36m  Disk Storage (2.5ms) [0m[34mGenerated URL for file at key: WgoF4FAECa1ExUGP8t4oEUCu (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRWMmR2UmpSR1FVVkRZVEZGZUZWSFVEaDBORzlGVlVOMUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlNall6TkMxellYSmhibVJ2Ymk1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KekkyTXpRdGMyRnlZVzVrYjI0dWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDE5LTAyLTE0VDIxOjE2OjI3LjgyNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0f14cc1c2138e1437f3bfdaa1581f0eba89a4fa/2634-sarandon.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%222634-sarandon.jpg%22%3B+filename%2A%3DUTF-8%27%272634-sarandon.jpg)[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6] Performed ActiveStorage::PurgeJob (Job ID: ae3de4d5-4473-4def-acf0-c5f1dcdbd5b6) from Async(default) in 67.31ms
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRWMmR2UmpSR1FVVkRZVEZGZUZWSFVEaDBORzlGVlVOMUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlNall6TkMxellYSmhibVJ2Ymk1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KekkyTXpRdGMyRnlZVzVrYjI0dWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDE5LTAyLTE0VDIxOjE2OjI3LjgyNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0f14cc1c2138e1437f3bfdaa1581f0eba89a4fa/2634-sarandon.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%222634-sarandon.jpg%22%3B+filename%2A%3DUTF-8%27%272634-sarandon.jpg
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRWMmR2UmpSR1FVVkRZVEZGZUZWSFVEaDBORzlGVlVOMUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlNall6TkMxellYSmhibVJ2Ymk1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KekkyTXpRdGMyRnlZVzVrYjI0dWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDE5LTAyLTE0VDIxOjE2OjI3LjgyNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0f14cc1c2138e1437f3bfdaa1581f0eba89a4fa/2634-sarandon.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%222634-sarandon.jpg%22%3B+filename%2A%3DUTF-8%27%272634-sarandon.jpg" for 127.0.0.1 at 2019-02-14 22:11:27 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"2634-sarandon.jpg\"; filename*=UTF-8''2634-sarandon.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRWMmR2UmpSR1FVVkRZVEZGZUZWSFVEaDBORzlGVlVOMUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlNall6TkMxellYSmhibVJ2Ymk1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KekkyTXpRdGMyRnlZVzVrYjI0dWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDE5LTAyLTE0VDIxOjE2OjI3LjgyNFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--e0f14cc1c2138e1437f3bfdaa1581f0eba89a4fa", "filename"=>"2634-sarandon"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
