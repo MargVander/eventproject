@@ -1,0 +1,4 @@
+<% @user.each do |user| %>
+<p><%= user.email %><p>
+<a class="font-weight-light text-danger small" href="<%=admin_user_path(user.id)%> " data-confirm= 'Do you want to ban this user ?' data-method="DELETE">Delete this account</a>
+<% end %>

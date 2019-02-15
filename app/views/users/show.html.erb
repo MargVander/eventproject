@@ -22,5 +22,8 @@
     <p class="font-italic font-weight-light">"<%= user.description %>"</p>
   </blockquote>
 
+<% if current_user.moderator? %>
+<a href="<%=admin_root_path%> ">Moderate</a>
+<% end %>
 </div>
 </div>

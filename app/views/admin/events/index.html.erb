@@ -1,0 +1,20 @@
+<h1 class="font-weight-light" align="center">Moderate events</h1><br>
+
+<div class="list-group">
+
+<% @unvalidatedevent.each do |event| %>
+
+<a href="<%=event_path(event.id)%>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 text-dark font-weight-bold"><%= event.title %></h5>
+    </div>
+    <p class="mb-1 text-muted"><%= event.admin.email %></p>
+  </a>
+  <p><a class="font-weight-light text-success small" href="<%=admin_events_path(event.id)%> " data-method="POST">Validate</a>
+  <a class="font-weight-light text-danger small" href="<%=admin_event_path(event.id)%> " data-method="DELETE">Delete</a></p>
+
+  <% end %>
+</div>
+<br>
+<br>
+<br>

@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  get 'pictures/create'
   devise_for :users
   resources :events do
     resources :participations
-    resources :pictures
   end
   resources :users do
     resources :avatars, only: [:create]
+  end
+  namespace :admin do
+    root 'admin#index'
+    resources :users, :events
   end
   root 'events#index'
 

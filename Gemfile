@@ -19,6 +19,7 @@ gem 'dotenv-rails'
 gem 'devise'
 gem 'faker'
 gem 'stripe'
+gem 'table_print'
 
 
 # Use CoffeeScript for .coffee assets and views
