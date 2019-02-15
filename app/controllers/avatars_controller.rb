@@ -2,6 +2,6 @@ class AvatarsController < ApplicationController
   def create
     @user = User.find(params[:user_id])
     @user.avatar.attach(params[:avatar])
-    redirect_to(user_path("user_id"))
+    redirect_to user_path(@user.id)
   end
 end
