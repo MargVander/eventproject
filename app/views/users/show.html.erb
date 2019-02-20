@@ -1,29 +1,48 @@
+<%= render 'banneruser' %>
+
 <% user = @user %>
-<h1 class="font-weight-light" align="center"><%= user.first_name %> <%= user.last_name %></h1><br>
 
 
 
 
-<div class="card" align="center">
-<div class="card-body col-sm-10">
-  <blockquote class="blockquote mb-0 text-left">
-    <%if @user.avatar.attached?%>
-    <div align="center">
-    <%= image_tag @user.avatar, alt: 'avatar', class: "avatar"%>
-    <p></p>
-    </div>
-  <%else%>
-  <%end%>
-<%= form_tag user_avatars_path(@user.id), method: "post", multipart: true do %>
-  <%= file_field_tag :avatar %>
-  <%= submit_tag "mettre à jour" %>
-<% end %>
-    <p class="text-muted"><%= user.email %><br>
-    <p class="font-italic font-weight-light">"<%= user.description %>"</p>
-  </blockquote>
 
-<% if current_user.moderator? %>
-<a href="<%=admin_root_path%> ">Moderate</a>
-<% end %>
-</div>
-</div>
+<div class="container">
+            <div class="card bg-light">
+              <br><br>
+
+
+        <div class="card-body">
+
+          <div class="row">
+          <div align="center" class="col-md-6">
+            <%if @user.avatar.attached?%>
+            <%= image_tag @user.avatar, alt: 'avatar', class: "avatar"%>
+            <%else%>
+            <%= image_tag 'noavatar.png', alt: 'avatar', class: "avatar"%>
+            <%end%>
+          </div>
+          <div class="col-md-6">
+            <div class="move-profile">
+            <h1 class="text-dark"><%=user.email%></h1>
+            <p>Number of event created : <%=user.events.count%><br>
+            Number of event attended : <%=user.attendances.count%></p>
+            <p>Change your profile pic :</p>
+            <%= form_tag user_avatars_path(@user.id), method: "post", multipart: true do %>
+              <%= file_field_tag :avatar %>
+              <%= submit_tag "Update" , class: 'btn btn-secondary btn-submit' %>
+            <% end %>
+
+            <% if current_user.moderator? %>
+            <a href="<%=admin_root_path%> ">Moderate</a>
+            <% end %>
+
+      </div>
+            </div>
+          </div>
+
+
+
+
+      </div>
+        </div>
+      </div>

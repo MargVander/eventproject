@@ -1,61 +1,65 @@
-<% if flash[:danger] %>
-  <div class="alert alert-dismissible alert-danger">
-    <div class="notice"><strong><%= flash[:danger] %></strong>
-     </div>
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-  </div>
-<% end %>
+<%= render 'bannershow' %>
 
 <% event = @event %>
-<%if event.picture.attached?%>
-<div align="center">
-<%= image_tag event.picture, alt: 'event', class: "avatar"%>
-</div>
-<p></p>
-<%else%>
-<%end%>
 
-<h1 class="font-weight-light" align="center"><%= @event.title %></h1><br>
-  <div class="card" align="center">
-  <div class="card-body col-sm-10">
-    <blockquote class="blockquote mb-0 text-left">
-      <p><%= event.description %></p>
-      <p class="text-muted small">Le <%= event.start_date %> pendant <%= event.duration %> minutes <br>
-      A <%= event.location %> <br>
-      <%= event.attendees.count %> inscrit(s)</p>
+<div class="container">
+      <div class="card bg-light">
+        <div class="image-side">
+  <%= image_tag event.picture, :alt => "event-pic", class: "card-img-top-lg" %>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title text-dark"><%=event.title%></h3>
+    <p class="card-text">
       <%if event.admin.avatar.attached?%>
-      <footer class="blockquote-footer"><a class="text-muted" href="<%=user_path(event.admin.id)%>"><%= image_tag event.admin.avatar, alt: 'avatar', class: "avatarevent"%>  <%= event.admin.email %></a></footer>
+      <%= image_tag event.admin.avatar, :alt => "event-pic", class: "mr-2 rounded avatar-pic" %>
       <%else%>
-      <footer class="blockquote-footer"><a class="text-muted" href="<%=user_path(event.admin.id)%>"><%= event.admin.email %></a></footer>
       <%end%>
+    <%=event.admin.email%></p>
+    <p class="card-text">"<%=event.description%>"</p>
+<div class="row">
+<div class="col-md-6 "><p><strong class="text-dark"><i class="far fa-clock"></i>
+</strong> <%=event.start_date%><br>
+  <strong class="text-dark"><i class="fas fa-map-marker-alt"></i>
+</strong> <%=event.location%><br>
+  <strong class="text-dark"><i class="fas fa-dollar-sign"></i>
+</strong> <%=event.price%>€<br>
+  <strong class="text-dark"><i class="fas fa-user"></i>
+</strong> <%=event.attendees.count%> people are already attending</p>
+<% if current_user.id == event.admin.id %>
+<a class="font-weight-light" href="<%=event_participations_path(event.id)%> ">See the informations</a>
+<% else %>
 
-    </blockquote>
-  </div>
-  </div>
-  <p class="font-weight-light text-muted"><small>Created at : <%= event.created_at %></small></p>
+<%= form_tag event_participations_path(event.id) do %>
+<article>
+  <% if flash[:error].present? %>
+    <div id="error_explanation">
+      <p><%= flash[:error] %></p>
+    </div>
+  <% end %>
+  <label class="amount">
+    <p>If you want to join the event, please pay the amount of <%= event.price %> € below :</p>
+  </label>
+</article>
 
-  <% if current_user.id == event.admin.id %>
-  <a class="font-weight-light" href="<%=event_participations_path(event.id)%> ">See the informations</a>
-  <% else %>
-
-  <%= form_tag event_participations_path(event.id) do %>
-  <article>
-    <% if flash[:error].present? %>
-      <div id="error_explanation">
-        <p><%= flash[:error] %></p>
-      </div>
-    <% end %>
-    <label class="amount">
-      <p>If you want to join the event, please pay the amount of <%= event.price %> € below :</p>
-    </label>
-  </article>
-
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Have some fun !"
-          data-amount="<%= event.price * 100 %>"
-          data-currency="eur"
-          data-locale="auto"></script>
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="Have some fun !"
+        data-amount="<%= event.price * 100 %>"
+        data-currency="eur"
+        data-locale="auto"></script>
 <% end %>
-
 <% end %>
+<br>
+<p class="card-text"><small class="text-muted">Last updated <%= event.created_at %></small></p>
+
+</div>
+<div class="col-md-6">
+  <strong class="text-dark">Share with your friends :</strong><br><br>
+  <p><a href="#"><i class="fab fa-facebook-f"></i></a>      <a href="#"><i class="fab fa-facebook-messenger"></i></a>       <a href="#"><i class="fab fa-twitter"></i></a>       <a href="#"><i class="fab fa-instagram"></i></a>       <a href="#"><i class="fab fa-linkedin-in"></i></a>        <a href="#"><i class="fab fas fa-envelope"></i></a></p>
+  </div>
+</div>
+<br>
+
+</div>
+  </div>
+</div>

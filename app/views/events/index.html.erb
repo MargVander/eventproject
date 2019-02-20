@@ -1,18 +1,25 @@
-<h1 class="font-weight-light" align="center">Where are we going ?</h1><br>
+<%= render 'bannerindex' %>
+<br>
 
-<div class="list-group">
+<div class="container">
+      <div class="row">
 
 <% @validatedevent.each do |event| %>
+<div class="card card-small bg-light">
+<%= image_tag event.picture, :alt => "event-pic", class: "card-img-top" %>
+  <div class="card-body">
+    <h5 class="card-title text-dark"><a href="<%=event_path(event.id)%>"><%= event.title %></a></h5>
+    <p class="card-text"><small class="text-muted"><%= event.admin.email %></small></p>
 
-<a href="<%=event_path(event.id)%>" class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1 text-dark font-weight-bold"><%= event.title %></h5>
-    </div>
-    <p class="mb-1 text-muted"><%= event.admin.email %></p>
-  </a>
+    <p class="card-text"><small class="text-muted"><%= event.attendees.count %> attendee(s)</small></p>
+  </div>
+</div>
+
 
   <% end %>
 </div>
+        </div>
+
 <br>
 <br>
 <br>

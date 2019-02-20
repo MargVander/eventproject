@@ -25,7 +25,15 @@ class EventsController < ApplicationController
      @event.admin = current_user
      @event.save
      @event.picture.attach(params[:picture])
-     redirect_to root_path
+     if @event.errors.any?
+       flash[:danger] = "Event creation failed"
+       redirect_to request.referrer
+     else
+       flash[:notice] = "Event creation succeeded. Need to be validated"
+       redirect_to root_path
+     end
+
+
   end
 
   def edit
@@ -39,7 +47,13 @@ class EventsController < ApplicationController
     duration = eventparams["duration"].to_i
     price = eventparams["price"].to_i
      @event.update(start_date: eventparams["start_date"], duration: duration, title: eventparams["title"], description: eventparams["description"], price: price, location: eventparams["description"])
-     redirect_to event_path(@event.id)
+     if @event.errors.any?
+       flash[:danger] = "Event edition failed"
+       redirect_to request.referrer
+     else
+       flash[:notice] = "Event edition succeeded."
+       redirect_to event_path(@event.id)
+     end
   end
 
   def show

@@ -1,8 +1,21 @@
-<ul>
-<% @attendees.each do |attendee| %>
-<li><%= attendee.email %></li>
-<% end %>
-</ul>
+<%= render 'headerattendee' %>
 
-<a class="font-weight-light" href="<%=edit_event_path(@event.id)%> ">Edit event</a>
-<a class="font-weight-light text-danger" href="<%=event_path(@event.id)%> "data-confirm= 'Are you sure ?' data-method="DELETE">Delete event</a>
+<div class="container">
+<div class="my-3 p-3 bg-light rounded box-shadow">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Attendee(s)</h6>
+                <% @attendees.each do |attendee| %>
+
+                <div class="media text-muted pt-3">
+                  <%= image_tag attendee.avatar, :alt => "event-pic", class: "mr-2 rounded avatar-pic" %>
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-dark"><%=attendee.email%></strong>
+                    Joined the website on <%=attendee.created_at%>
+                  </p>
+                </div>
+                <% end %>
+
+                <a class="font-weight-light small" href="<%=edit_event_path(@event.id)%> ">Edit</a>
+                <a class="font-weight-light text-danger small" href="<%=event_path(@event.id)%> "data-confirm= 'Are you sure ?' data-method="DELETE">Delete</a>
+
+                </div>
+              </div>

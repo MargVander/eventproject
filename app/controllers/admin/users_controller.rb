@@ -7,14 +7,19 @@ class Admin::UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    @user.events.each do |event|
-      event.destroy
-    end
-    @user.attendances.each do |attendance|
-      attendance.destroy
-    end
-    @user.destroy
-    redirect_to request.referrer
+
+        if Event.exists?(admin: @user)
+          Event.find_by(admin: @user).destroy
+        end
+
+        if Attendance.exists?(attendee: @user)
+          Attendance.where(attendee: @user).each do |atd|
+            atd.destroy
+          end
+        end
+
+        @user.destroy
+        redirect_to request.referrer
   end
 
   private
